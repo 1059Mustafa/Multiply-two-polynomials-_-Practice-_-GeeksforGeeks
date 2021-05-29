@@ -1,0 +1,17 @@
+ vector<int>polyMultiply(int Arr1[], int Arr2[], int M, int N)
+    {
+        vector<int>v(M+N,0);
+        
+            for(int i=M-1;i>=0;i--)
+            {
+                for(int j=N-1;j>=0;j--)
+                {
+                    v[i+j]+=Arr1[i]*Arr2[j];
+                    
+                }
+            }
+            
+            
+            return v;
+        
+    }
